@@ -3,6 +3,7 @@ import sys
 
 from config.settings.settings import *
 from decouple import config
+import dj_database_url
 
 DEBUG = False
 
@@ -17,3 +18,7 @@ DATABASES = {
         'PASSWORD': config('DB_PASSWORD')
     }
 }
+
+# herokuapp config
+prod_db = dj_database_url.config(conn_max_age=500)
+DATABASES["default"].update(prod_db)

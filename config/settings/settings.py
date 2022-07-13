@@ -39,6 +39,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -216,3 +217,5 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 CSRF_COOKIE_HTTPONLY = True
 SESSION_COOKIE_HTTPONLY = True
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'

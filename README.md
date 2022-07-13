@@ -4,7 +4,7 @@
 
 The project is being modularized to two apps which are located inside the apps folder directory.
 
-1. config folder: This folder contains the core system settings such as the settings.py, wsgi.py,celery.py and urls.py
+1. config folder: This folder contains the core system settings such as the settings.py, wsgi.py, and urls.py
 2. apps folder: This folder contains each of the app on the system such:
     1. core app: This app handles the user registration and all related activities of a particular user
     2. finance app: This app handles the sales related functionalities of the system.
