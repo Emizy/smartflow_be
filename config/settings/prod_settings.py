@@ -5,7 +5,7 @@ from config.settings.settings import *
 from decouple import config
 import dj_database_url
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
