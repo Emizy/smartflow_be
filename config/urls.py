@@ -15,7 +15,7 @@ from apps.core.views import account_logout
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="SMARTFLOW INTERVIEW TEST",
+        title="SMARTFLOW",
         default_version="v1",
         description="Endpoints showing interactable part of the system",
         terms_of_service="https://www.google.com/policies/terms/",
